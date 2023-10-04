@@ -4,7 +4,7 @@ function get_shortest(array $strings)
 {
     $shortest = $strings[0];
     foreach ($strings as $longueur) {
-        if (count($longueur) < count($shortest)) {
+        if (strlen($longueur) < strlen($shortest)) {
             $shortest = $longueur;
         }
     }
